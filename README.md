@@ -1,2 +1,2 @@
 # WEB222
-My WEB222 Assignments, Seneca Semester2, 2018
+My WEB222 Assignments, Seneca Semester2, Winter 2018
