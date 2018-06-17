@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A5-Yue Chen</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/registration.js"></script> 
+    </head>
+    <body>
+        <header>
+            <a><img src="img/logo.jpg" alt="logo" height = "100" width="100" /></a>
+            <h2>Yue Chen</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Page One</a></li>
+                <li><a href="registration.html">Page Two</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id=form>
+                <form name="myform" method="POST" action="https://httpbin.org/post" onsubmit="return formValidation();">
+                    <input type="hidden" name="firstName" id="firstName" value="Yue" required />
+                    <input type="hidden" name="lastName" id="lastName" value="Chen" required />
+                    <div>
+                        <label for="userName">Username:</label>
+                        <input type="text" name="userName" class = "light" id="userNameID" maxlength="20" onchange="userNameValidation()" required />
+                        <div class="err" id="userNameErr"></div>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password1" id="password1" class = "light" maxlength="10" required onchange="password1Validation()" />
+                        <div class="err" id="passwordErr1"></div><br>
+                        <label for="commitPassword">Commit Password:</label>
+                        <input type="password" name="password2" id="password2" class = "light" placehold="Commit password." maxlength="10" onchange="password2Validation()" required />
+                        <div class="err" id="passwordErr2"></div>
+                    </div>
+                    <div>
+                        <label for="phoneNum">Phone Number:</label>
+                        <input type="tel" name="phoneNum" id="phoneNumber" class = "light"  onchange="phoneValidation()" required />
+                        <div class="err" id="phoneErr"></div>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class = "light" maxlength="20" required />
+                    </div>
+                    <div>
+                        <label for="address">Street name and number:</label>
+                        <input type="text" name="address" id="address"  class = "light" maxlength="30" required />
+                    </div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="cityID" maxlength="20" class = "light" onchange="cityValidation(); " required/>
+                        <div class="err" id="cityErr"></div>
+                    </div>
+                    <div>
+                        <label for ="povince" onchange="provinceValidation(); ">Province:</label> 
+                        <select id="provinceList" required>
+                            <option value=1>1. AB: Alberta</option>
+                            <option value=2>2. BC: British Columbia</option>                                                      
+                            <option value=3>3. MB: Manitoba</option>
+                            <option value=4>4. NB: New Brunswick</option>
+                            <option value=5>5. NL: Newfoundland and Labrador</option>
+                            <option value=6>6. NS: Nova Scotia</option>
+                            <option value=7 selected>7. ON: Ontario</option>
+                            <option value=8>8. PE: Prince Edward Island</option>
+                            <option value=9>9. QC: Quebec</option>
+                            <option value=10>10.SK: Saskatchewan</option>
+                        </select> <div class="err" id="provinceErr"></div>
+                    </div>
+                    <div>
+                        <label for="PostCode">Postal Code:</label>
+                        <input type="text" name="postCode" id="postCode" class = "light" maxlength="6" placeholder="Post code should like C1A1A7." onchange="postCodeValidation();" required  />
+                        <div class="err" id="postCodeErr"></div>
+                    </div>
+                    <br>
+                    <div>
+                    <label for="button"></label>
+                    <button type="submit" value="Submit" id="submit">Submit</button>
+                    <button type="reset" value="Reset" id="reset" onclick="clearAllErrors();">Reset</button>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="err" id="errors"></div>
+                </form>
+            </div>
+        </section>
+    </body>
+	<side>
+		<a href="mailto:ychen465@myseneca.ca"><img src="img/memail.png" alt="email" height="50px" width="60px"/></a>
+	</side>
+	<footer>
+		<p>&copy; 2018 Yue Chen</p>
+	</footer>
+</html>
