@@ -7,7 +7,7 @@
 * electronically from any other source (including web sites) or distributed to 
 * other students. 
 * 
-* Name: ____Yue Chen____ Student ID: __150612166__ Date: ____March 30, 2018___ 
+* Name: ____YC____ Student ID: __*****__ Date: ____March 30, 2018___ 
 * 
 ********************************************************************************/
 

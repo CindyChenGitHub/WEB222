@@ -1,3 +1,7 @@
+/********************************************************************************* 
+* WEB222 – Assignment #4a
+* Name: ____YC____ Student ID: __********__ Date: ____March 30, 2018___ 
+********************************************************************************/
 var petData = [
   {
     image: { src: "https://zenit.senecac.on.ca/~tanvir.alam/shared/winter-2017/web222/assignment4/pets/Bella.jpg", alt: "Bella", width: 120, height: 160 },
